@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --colour-primary: #2A8E9E;
+    --colour-secondary: #180D39;
+    --colour-tertiary: #1D1E20;
+
+    --rounded: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #E9F3F4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10%;
+    padding-block: 1rem;
+    margin-inline: auto;
+
+    /* Logo */
+    span {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        color: var(--colour-primary);
+        font-weight: 600;
+    }
+
+    .nav-group {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        a:hover {
+            color: var(--colour-primary);
+        }
+    }
+
+    #call-to-action {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .login {
+        text-decoration: none;
+        border-radius: var(--rounded);
+        border: 1px solid gray;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        color: black;
+    }
+
+    .sign-up {
+        text-decoration: none;
+        border-radius: var(--rounded);
+        background-color: var(--colour-primary);
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        color: white;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10%;
+    padding-block: 1rem;
+    min-height: 60vh;
+    margin-inline: auto;
+    gap: 3rem;
+}
+
+.hero-text {
+    flex-basis: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+
+        span {
+           font-size: 3rem; 
+        }
+    }
+
+    form {
+        min-width: 250px;
+        background-color: white;
+        width: fit-content;
+        padding: 0.1rem;
+        border-radius: 7px;
+
+        input {
+            border: none;
+            background-color: transparent;
+            padding-inline: 10px;
+            padding-block: 0.5rem;
+            border-radius: var(--rounded);
+            min-width: 200px;
+        }
+        button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            padding: 9px;
+            border-radius: var(--rounded);
+            background-color: var(--colour-primary);
+            color: white;
+        }
+    }
+    .logos {
+        display: flex;
+        gap: 1rem;
+
+        img {
+            max-width: 100px;
+        }
+    }
+}
+
+.hero-image {
+    flex-basis: 1;
+    display: flex;
+    justify-content: center;
+}
